@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-26T14:49:41 IST" name="All Test Suite" finished-at="2025-02-26T14:49:55 IST" duration-ms="13921">
+    <groups>
+    </groups>
+    <test started-at="2025-02-26T14:49:41 IST" name="Test" finished-at="2025-02-26T14:49:41 IST" duration-ms="12">
+    </test> <!-- Test -->
+    <test started-at="2025-02-26T14:49:41 IST" name="Test1" finished-at="2025-02-26T14:49:45 IST" duration-ms="3761">
+      <class name="com.example.TestCase1">
+        <test-method signature="testcase1()[pri:0, instance:com.example.TestCase1@1eb5174b]" started-at="2025-02-26T14:49:41 IST" name="testcase1" finished-at="2025-02-26T14:49:45 IST" duration-ms="3740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase1 -->
+      </class> <!-- com.example.TestCase1 -->
+    </test> <!-- Test1 -->
+    <test started-at="2025-02-26T14:49:45 IST" name="Test2" finished-at="2025-02-26T14:49:51 IST" duration-ms="5940">
+      <class name="com.example.TestCase2">
+        <test-method signature="testcase2()[pri:0, instance:com.example.TestCase2@4e7912d8]" started-at="2025-02-26T14:49:45 IST" name="testcase2" finished-at="2025-02-26T14:49:51 IST" duration-ms="5939" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase2 -->
+      </class> <!-- com.example.TestCase2 -->
+    </test> <!-- Test2 -->
+    <test started-at="2025-02-26T14:49:51 IST" name="Test3" finished-at="2025-02-26T14:49:55 IST" duration-ms="4159">
+      <class name="com.example.TestCase3">
+        <test-method signature="testcase3()[pri:0, instance:com.example.TestCase3@41e1e210]" started-at="2025-02-26T14:49:51 IST" name="testcase3" finished-at="2025-02-26T14:49:55 IST" duration-ms="4157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase3 -->
+      </class> <!-- com.example.TestCase3 -->
+      <class name="com.example.Initialize">
+        <test-method is-config="true" signature="startDocker()[pri:0, instance:com.example.Initialize@ba54932]" started-at="2025-02-26T14:49:20 IST" name="startDocker" finished-at="2025-02-26T14:49:41 IST" duration-ms="21031" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDocker -->
+        <test-method is-config="true" signature="stopDocker()[pri:0, instance:com.example.Initialize@ba54932]" started-at="2025-02-26T14:49:55 IST" name="stopDocker" finished-at="2025-02-26T14:50:03 IST" duration-ms="8013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopDocker -->
+      </class> <!-- com.example.Initialize -->
+    </test> <!-- Test3 -->
+  </suite> <!-- All Test Suite -->
+</testng-results>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="classes" thread-count="3">
+    <test name="Test">
+        <classes>
+            <class name="com.example.Initialize"/>
+        </classes>
+    </test>
+    <test name="Test1">
+        <classes>
+            <class name="com.example.TestCase1"/>
+        </classes>
+    </test>
+    <test name="Test2">
+        <classes>
+            <class name="com.example.TestCase2"/>
+        </classes>
+    </test>
+    <test name="Test3">
+        <classes>
+            <class name="com.example.TestCase3"/>
+        </classes>
+    </test>
+</suite>
