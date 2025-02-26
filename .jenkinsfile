@@ -1,0 +1,64 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Start Docker') {
+            steps {
+                echo 'Checking Docker permissions...'
+                sh 'whoami'
+
+                echo 'Checking Docker version...'
+                sh 'docker --version'
+
+                echo 'Checking if Docker is running...'
+                sh 'systemctl is-active docker || echo "Docker is not running"'
+
+                echo 'Starting Docker from script...'
+                sh 'bash -c ./dockerUp.sh'
+
+                echo 'Waiting for containers to start...'
+                sleep 10
+
+                echo 'Checking running containers...'
+                sh 'docker ps'
+            }
+        }
+        
+        stage('Build') {
+            steps {
+                 echo 'Building the code'
+            }
+        }
+        
+        stage('Test') {
+            steps {
+                sh "mvn test -X"
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo 'Deploying the code'
+            }
+        }
+
+        stage('Release') {
+            when {
+                branch "main"
+            }
+            steps {
+                echo 'Releasing the project'
+            }
+        }
+    }
+    
+    post {
+        success {
+            echo 'Pipeline completed successfully!'
+        }
+        failure {
+            echo 'Pipeline failed! Check logs for errors.'
+        }
+    }
+}
+
